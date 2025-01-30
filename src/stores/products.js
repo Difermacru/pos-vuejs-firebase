@@ -2,8 +2,7 @@ import { computed, ref} from "vue";
 import { defineStore } from "pinia";
 import { useFirestore, useCollection, useFirebaseStorage } from "vuefire";
 import { collection, addDoc,where, query, orderBy, limit, updateDoc, doc,getDoc, deleteDoc } from "firebase/firestore";
-import { ref as storageRef, deleteObject, connectStorageEmulator } from "firebase/storage";
-import { products } from "@/data/products";
+import { ref as storageRef, deleteObject} from "firebase/storage";
 
 export const useProductStore = defineStore('products', () => {
 
